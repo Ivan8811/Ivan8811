@@ -1,65 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/Fonts-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Mamon Site</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <div class="logo">
-                        <!-- класс logo-img нужен если лого на сайте менятся не будет, и по БЕМ правильно  -->
-                        <img class="logo__img" src="./img/Header/mamon-logo (1).png" alt="Mamon Company">
-                    </div>
-                    <div class="header__title">mamon</div>
-                </div>
-                <div class="header__menu">
-                    <!-- для практики написали классы у всех элементов "li" и "a" в меню, можно оставлять короткий вариант -->
-                    <ul class="menu">
-                        <li class="menu__ item"><a class="menu__link" href="">Services</a></li>
-                        <li class="menu__ item"><a class="menu__link" href="">Clients</a></li>
-                        <li class="menu__ item"><a class="menu__link" href="">Our team</a></li>
-                        <li class="menu__ item"><a class="menu__link menu__link--trigger" href="">Contact Us</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="logo">
+              <!-- класс logo-img нужен если лого на сайте менятся не будет, и по БЕМ правильно  -->
+              <img
+                class="logo__img"
+                src="./img/Header/mamon-logo (1).png"
+                alt="Mamon Company"
+              />
             </div>
+            <div class="header__title">mamon</div>
+          </div>
+          <div class="header__menu">
+            <!-- для практики написали классы у всех элементов "li" и "a" в меню, можно оставлять короткий вариант -->
+            <ul class="menu">
+              <li class="menu__ item">
+                <a class="menu__link" href="">Services</a>
+              </li>
+              <li class="menu__ item">
+                <a class="menu__link" href="">Clients</a>
+              </li>
+              <li class="menu__ item">
+                <a class="menu__link" href="">Our team</a>
+              </li>
+              <li class="menu__ item">
+                <a class="menu__link menu__link--trigger" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
+      </div>
     </header>
     <section class="header--content">
-        <div class="container">
-            <div class="header-content__inner">
-                <div class="header-content__title">We're an independent development agency.</div>
-                <div class="header-content__text">We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences.</div>
-                <button class="button button-primary header-content__button">Contant us</button>
+      <div class="container">
+        <div class="header-content__inner">
+          <div class="header-content__title">
+            We're an independent development agency.
+          </div>
+          <div class="header-content__text">
+            We understand the intricacies of web development inside-out. That's
+            why we build rock-solid Mobile and Web applications enriched with
+            user-centered visual experiences.
+          </div>
+          <button class="button button-primary header-content__button">
+            Contant us
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <img class="service-line" src="./img/Наш сервис/Group.png" alt="line" />
+        <div class="service-wrap">
+          <div class="bloc">
+            <div class="icon-img">
+              <img
+                class="icon"
+                src="./img/Наш сервис/smartphone.png"
+                alt="smartphone"
+              />
+            </div>
+            <div class="service-content__inner">
+              <div class="service-content__title">
+                Mobile Development
+              </div>
+              <div class="service-content__text">
+                We develop mobile apps for all contemporary mobile platforms.
+                Mamon team builds native and cross-platform solutions.
+              </div>
+            </div>
+          </div>
+          <div class="bloc">
+              <div class="icon-img">
+                   <img src="./img/Наш сервис/layers.png" alt="layers" />
+              </div>
+            <div class="layers-content__inner service-content__inner">
+              <div class="layers-content__title service-content__title">
+                Product Design
+              </div>
+              <div class="layers-content__text service-content__text">
+                We create design given the product audience, goal, business
+                domain, technology and the platform for the solution.
+              </div>
+            </div>
+          </div>
+          <div class="bloc">
+              <div class="icon-img">
+                  <img src="./img/Наш сервис/monitor.png" alt="monitor" />
+              </div>
+            
+            <div class="monitor-content__inner service-content__inner">
+              <div class="monitor-content__title service-content__title">
+                Product Design
+              </div>
+              <div class="monitor-content__text service-content__text">
+                We create design given the product audience, goal, business
+                domain, technology and the platform for the solution.
+              </div>
+            </div>
+          </div>
+          <div class="bloc">
+            <div class="icon-img">
+              <img src="./img/Наш сервис/test (1).png" alt="text" />
+            </div>
+            <div class="text-content__inner service-content__inner">
+              <div class="text-content__title service-content__title">
+                Quality Assurance
+              </div>
+              <div class="text-content__text service-content__text">
+                Our QA team ensures high standard of quality of products
+                delivered.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <img
+          class="clients-line"
+          src="./img/Наш сервис/Group (1).png"
+          alt="line"
+        />
+        <div class="clients-wrap">
+          <img
+            class="clients_speed"
+            src="./img/Наши клиенты/logo-lightspeed.png"
+            alt="speed"
+          />
+          <img
+            class="clients_shutterfly"
+            src="./img/Наши клиенты/logo-shutterfly.png"
+            alt="shutterfly"
+          />
+          <img
+            class="clients_flitsmeister"
+            src="./img/Наши клиенты/logo-flitsmeister.png"
+            alt="flitsmeister"
+          />
+          <img
+            class="clients_trvl"
+            src="./img/Наши клиенты/logo-trvl.png"
+            alt="trvl"
+          />
+          <img
+            class="clients_decos"
+            src="./img/Наши клиенты/logo-decos.png"
+            alt="decos"
+          />
+          <img
+            class="clients_sap"
+            src="./img/Наши клиенты/logo-sap.png"
+            alt="sap"
+          />
+          <img
+            class="clients_strategies"
+            src="./img/Наши клиенты/logo-spider-strategies.png"
+            alt="strategies"
+          />
+          <img
+            class="clients_tiqets"
+            src="./img/Наши клиенты/logo-tiqets.png"
+            alt="tiqets"
+          />
+          <img
+            class="clients_redkix"
+            src="./img/Наши клиенты/logo-redkix.png"
+            alt="redkix"
+          />
+          <img
+            class="clients_tripadvisor"
+            src="./img/Наши клиенты/logo-tripadvisor.png"
+            alt="tripadvisor"
+          />
+          <img
+            class="clients_hotelchamp"
+            src="./img/Наши клиенты/logo-hotelchamp.png"
+            alt="hotelchamp"
+          />
+          <img
+            class="clients_nos"
+            src="./img/Наши клиенты/logo-nos.png"
+            alt="nos"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="tiam">
+      <div class="container">
+        <img class="tiam_line" src="./img/Команда/Group (3).png" alt="line" />
+        <div class="tiam-wrap">
+            
+            <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (4).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Vadim
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Managing Director
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (5).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Alex
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Front-end Developer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (6).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Artyom
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Back-end Developer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (7).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Sergey
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Technology Director
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (8).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Agneshka
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Mobile Developer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (9).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Evgeny
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Product Designer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (10).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Andrey
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Front-end Developer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (11).png" alt="Команда">
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Dmitry
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Back-end Developer
+                  </div>
+                </div>
+              </div>
+              <div class="tiam_bloc">
+                <div class="tiam-icon_img">
+                    <img src="./img/Команда/Group (12).png" alt="Команда"> 
+                </div>
+                <div class="tiam-content__inner">
+                  <div class="tiam-content__title">
+                    Tom
+                  </div>
+                  <div class="tiam-content__text service-content__text">
+                    Product Designer
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
+      </div>
     </section>
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__logo">
-                    <div class="logo">
-                        <img class="logo__img" src="./img/Header/mamon-logo (1).png" alt="Mamon Company">
-                    </div>
+                  <div class="logo">
+                    <img
+                      class="logo__img"
+                      src="./img/Header/mamon-logo (1).png"
+                      alt="Mamon Company"
+                    />
+                  </div>
                 </div>
                 <div class="footer__media">
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-behance fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                  <a href="#"><i class="fa fa-codepen fa-2x"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-</body>
+  </body>
 </html>
-

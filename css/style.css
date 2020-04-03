@@ -76,6 +76,175 @@
     margin-top: 70px;
 }
 
+/* Наш сервис */
+.service-line {
+    position: absolute;
+    width: 1920px;
+    height: 18px;
+    left: calc(50% - 1920px/2);
+    top: 635px;
+}
+.service-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 280px;
+    height: 300px;
+    width: 100%;
+}
+.icon {
+    width: 34px;
+    height: 60px; 
+}
+.icon-img {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+}
+.service-content__title {
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--font-dark);
+    padding-top: 18px;
+}
+.service-content__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--font-light-gray);
+    margin-top: 10px;
+    line-height: 180%;
+}
+.service-content__inner {
+    width: 280px;
+    height: 140px;
+}
+.bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    height: 140px;
+}
+
+/* наши клиенты */
+.clients-line {
+    position: absolute;
+    width: 1920px;
+    height: 18px;
+    left: calc(50% - 1920px/2);
+    top: 1159px;
+}
+.clients-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 215px;
+    height: 250px;
+    width: 100%;
+}
+.clients_speed {
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+}
+.clients_shutterfly {
+    width: 139px;
+    height: 35px;
+    margin-top: 40px;
+}
+.clients_flitsmeister {
+    width: 177px;
+    height: 39px;
+    margin-top: 40px;
+}
+.clients_trvl {
+    width: 61.81px;
+    height: 53.83px;
+    margin-top: 20px;
+}
+.clients_decos {
+    width: 149px;
+    height: 22px;
+    margin-top: 40px;
+}
+.clients_sap {
+    width: 84.6px;
+    height: 43px;
+    margin-top: 40px;
+}
+.clients_strategies {
+    width: 154.24px;
+    height: 47.65px;
+    margin-top: 20px;
+}
+.clients_tiqets {
+    width: 102px;
+    height: 39px;
+    margin-top: 40px;
+}
+.clients_redkix {
+    width: 145px;
+    height: 40px;
+    margin-top: 40px;
+}
+.clients_tripadvisor {
+    width: 182.04px;
+    height: 29.2px;
+    margin-top: 20px;
+}
+.clients_hotelchamp {
+    width: 173.9px;
+    height: 31.91px;
+    margin-top: 40px;
+}
+.clients_nos {
+    width: 92.89px;
+    height: 52.15px;
+    margin-top: 40px;
+}
+
+ /* Команда */
+.tiam_line {
+    position: absolute;
+    width: 1920px;
+    height: 18px;
+    left: calc(50% - 1920px/2);
+    top: 1632px;
+}
+.tiam-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+}
+.tiam_bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    height: 150px;
+}
+.tiam-content__title {
+    font-size: 28px;
+    font-weight: 700;
+    color:var(--font-dark);
+}
+.tiam-content__inner {
+    align-items: center;
+    width: 280px;
+    height: 70px;
+}
+.tiam-icon_img {
+    width: 100px;
+    height: 100px;
+}
+    
 /* footer */
 
 .footer {
@@ -87,11 +256,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.footer__media a {
+.footer__media a{
     display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: tomato;
-    margin: 0 10px;
+    justify-content: space-between;
+    margin: 0 12px;
+    color: var(--font-light-gray);
 }
