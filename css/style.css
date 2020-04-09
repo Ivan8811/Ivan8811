@@ -77,14 +77,37 @@
 }
 
 /* Наш сервис */
-.service-line {
+.services-line {
     position: absolute;
-    width: 1920px;
-    height: 18px;
-    left: calc(50% - 1920px/2);
+    width: 100%;
+    padding-left: 42%;
     top: 635px;
 }
-.service-wrap {
+.text:before {
+    content: "";
+    display: inline-block;
+    width: 32%;
+    height: 1px;
+    background-color: var(--font-light-gray);
+    position: relative;
+}
+.text:after {
+    content: "";
+    display: inline-block;
+    width: 105%;
+    height: 1px;
+    background-color: var(--font-light-gray);
+    position: relative;
+}
+.text:before {
+    margin-left: -100%;
+    left: -30px;
+}
+.text:after {
+    margin-right: -100%;
+    right: -40px;
+}
+.services-wrap {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -93,46 +116,45 @@
     height: 300px;
     width: 100%;
 }
-.icon {
-    width: 34px;
-    height: 60px; 
-}
-.icon-img {
-    display: flex;
-    width: 80px;
-    justify-content: center;
-}
-.service-content__title {
-    font-size: 20px;
-    line-height: 33px;
-    color: var(--font-dark);
-    padding-top: 18px;
-}
-.service-content__text {
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--font-light-gray);
-    margin-top: 10px;
-    line-height: 180%;
-}
-.service-content__inner {
-    width: 280px;
-    height: 140px;
-}
-.bloc {
+.services-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 420px;
     height: 140px;
 }
+.smartphone {
+    width: 34px;
+    height: 60px; 
+}
+.services-content__img {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+}
+.services-content__inner {
+    width: 280px;
+    height: 140px;
+}
+.services-content__title {
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--font-dark);
+    padding-top: 18px;
+}
+.services-content__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--font-light-gray);
+    margin-top: 10px;
+    line-height: 180%;
+}
 
 /* наши клиенты */
 .clients-line {
     position: absolute;
-    width: 1920px;
-    height: 18px;
-    left: calc(50% - 1920px/2);
+    width: 100%;
+    padding-left: 42%;
     top: 1159px;
 }
 .clients-wrap {
@@ -144,76 +166,75 @@
     height: 250px;
     width: 100%;
 }
-.clients_speed {
+.clients-wrap__speed {
     width: 180px;
     height: 50px;
     margin-top: 20px;
 }
-.clients_shutterfly {
+.clients-wrap__shutterfly {
     width: 139px;
     height: 35px;
     margin-top: 40px;
 }
-.clients_flitsmeister {
+.clients-wrap__flitsmeister {
     width: 177px;
     height: 39px;
     margin-top: 40px;
 }
-.clients_trvl {
+.clients-wrap__trvl {
     width: 61.81px;
     height: 53.83px;
     margin-top: 20px;
 }
-.clients_decos {
+.clients-wrap__decos {
     width: 149px;
     height: 22px;
     margin-top: 40px;
 }
-.clients_sap {
+.clients-wrap__sap {
     width: 84.6px;
     height: 43px;
     margin-top: 40px;
 }
-.clients_strategies {
+.clients-wrap__strategies {
     width: 154.24px;
     height: 47.65px;
     margin-top: 20px;
 }
-.clients_tiqets {
+.clients-wrap__tiqets {
     width: 102px;
     height: 39px;
     margin-top: 40px;
 }
-.clients_redkix {
+.clients-wrap__redkix {
     width: 145px;
     height: 40px;
     margin-top: 40px;
 }
-.clients_tripadvisor {
+.clients-wrap__tripadvisor {
     width: 182.04px;
     height: 29.2px;
     margin-top: 20px;
 }
-.clients_hotelchamp {
+.clients-wrap__hotelchamp {
     width: 173.9px;
     height: 31.91px;
     margin-top: 40px;
 }
-.clients_nos {
+.clients-wrap__nos {
     width: 92.89px;
     height: 52.15px;
     margin-top: 40px;
 }
 
  /* Команда */
-.tiam_line {
+.team-line {
     position: absolute;
-    width: 1920px;
-    height: 18px;
-    left: calc(50% - 1920px/2);
+    width: 100%;
+    padding-left: 42%;
     top: 1632px;
 }
-.tiam-wrap {
+.team-wrap {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -223,26 +244,26 @@
     height: 500px;
     width: 100%;
 }
-.tiam_bloc {
+.team-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 420px;
     height: 150px;
 }
-.tiam-content__title {
-    font-size: 28px;
-    font-weight: 700;
-    color:var(--font-dark);
+.team-content__img {
+    width: 100px;
+    height: 100px;
 }
-.tiam-content__inner {
+.team-content__inner {
     align-items: center;
     width: 280px;
     height: 70px;
 }
-.tiam-icon_img {
-    width: 100px;
-    height: 100px;
+.team-content__title {
+    font-size: 28px;
+    font-weight: 700;
+    color:var(--font-dark);
 }
     
 /* footer */
@@ -261,4 +282,8 @@
     justify-content: space-between;
     margin: 0 12px;
     color: var(--font-light-gray);
+    transition: .3s ;
+}
+.footer__media a :hover {
+    color:var(--font-gray);
 }
